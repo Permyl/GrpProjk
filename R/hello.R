@@ -25,11 +25,11 @@ delta<-function(a,b,c){
 
 quad_roots <- function(a,b,c) # a simple function that calculates the roots of a quadratic equation
 
-{ dis <- b^2 - 4*a*c #calculting the discriminant 
-
+{	
 	if (a != 0) # check that we actually have a quadratic equation (not linear)
+		{dis <- b^2 - 4*a*c #calculting the discriminant
   
-		{if (det >= 0) # case1: non-negative discriminant
+		if (det >= 0) # case1: non-negative discriminant
 			{roots <- c((-b+sqrt(det))/(2*a),(-b-sqrt(det))/(2*a))} # result as vector of length 2 
 	
 		else # otherwise give a complex solution
